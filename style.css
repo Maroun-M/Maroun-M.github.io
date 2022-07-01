@@ -216,7 +216,7 @@
     color:white;
     align-items: center;
     text-align: center;
-    margin-top:60px;
+    padding-top:60px;
     background-color: #01040a;
     width:100%;
     display: flex;
@@ -353,13 +353,15 @@
 }
 .projects-overlay p{
     font-family: Neon Font;
+    font-weight: 700;
+
     font-size:30px;
     color:#ffd9e2;
     white-space: pre;
     position: relative;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.03s infinite alternate;
+    animation: blinking 0.037s infinite alternate;
 
 }
 
@@ -423,8 +425,8 @@
     max-width:100%;
     font-size:20px;
     font-family: 'League Gothic', sans-serif;
-    word-spacing: 5px;
-    letter-spacing: .9px;
+    letter-spacing: .6px;
+    font-weight: 400;
     margin-top:45px;
     color:#00c8ff;
     text-shadow:none;
@@ -450,6 +452,135 @@
 
 .project2 img{
     width:200px;
+}
+/* end of projects section */
+
+/* start of contact */
+
+.contact-container{
+    background:#01040a;
+    color:#00c8ff;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: .9px;
+    font-size:20px;
+    width:100%;    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
     
+}
+.contact-overlay{
+    width:85%;
+    background:#fff;
+    border-radius: 5px;
+
+}
+
+.contact{
+    width:100%;
+    background: rgba(1, 21, 27, 0.596);
+    border-radius: 5px;
+    padding-bottom: 20px;
+
+}
+.contact-title{
+    background: #01040a;
+    padding-bottom: 100px;
+}
+.contact-title p{
+    padding-top:100px;
+    font-family: Neon Font;
+    font-weight: 700;
+    font-size:30px;
+    color:#ffd9e2;
+    white-space: pre;
+    position: relative;
+    text-align: center;
+    text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
+    animation: blinking 0.037s infinite alternate;
+
+}
+.contact .first-name{
+    padding:20px 20px 0px 20px;
+}
+
+.contact .last-name{
+    padding:20px 20px 0px 20px;
+
+}
+
+.contact .email-container{
+    padding:20px 20px 0px 20px;
+
+}
+
+.contact .message{
+    padding:20px 20px 0px 20px;
+
+}
+
+.contact input{
+    padding:6px 15px 6px 5px;
+    border-radius: 2px;
+    border: 1px solid rgba(1, 21, 27, 0.598);
+    background:rgb(245, 255, 255)
+}
+
+.contact textarea{
+    padding:6px 200px 120px 5px;
+    border-radius: 2px;
+    border: 1px solid rgba(1, 21, 27, 0.598);
+    background:rgb(245, 255, 255)
+}
+
+.contact .submit-button-container{
+    width:100px;
+    height:30px;
+    background: rgb(255, 255, 255);
+    margin-top:5px;
+    border-radius:5px;
+
+}
+.contact .submit-button{
+    font-size: 16px;
     
+    width:100%;
+    height:100%;    
+    background: rgba(1, 21, 27, 0.598);
+    border: 1px solid #00c8ff;
+    color:#00c8ff;
+    border-radius:5px;
+    padding:7px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.contact .submit-button:hover{
+    background: rgba(34, 63, 72, 0.598);
+}
+
+.fa-angles-up{
+    color:#00c8ff;
+    border: 1px solid #00c8ff;
+    border-radius:5px;
+    padding:7px;
+    background: rgba(1, 21, 27, 0.598);
+}
+
+.footer-container {
+    background:#01040a;
+    color:#00c8ff;
+    padding:40px 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 18px;
+    word-spacing: 1px;
+    letter-spacing: .9px;
+
+}
+
+.footer{
+    width:85%;
 }
