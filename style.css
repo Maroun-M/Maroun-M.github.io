@@ -142,7 +142,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 22px 3px rgba(225, 38, 226, .35), 0 0 20px 5px rgba(225, 38, 226, .45);
-    animation: blinking 0.02s infinite alternate;
+    animation: blinking 0.01s infinite alternate;
 
 }
 
@@ -181,7 +181,6 @@
     background-color: #fffcd7;
     border-radius: 8px;
     box-shadow: inset 0 0 18px rgba(251, 255, 0, 0.35), 0 0 18px 5px rgba(251, 255, 0, 0.35);
-    animation: blinking 0.02s infinite alternate;
 
 }
 
@@ -196,7 +195,6 @@
     background-color: #fffcd7;
     border-radius: 8px;
     box-shadow: inset 0 0 18px rgba(251, 255, 0, 0.35), 0 0 18px 5px rgba(251, 255, 0, 0.35);
-    animation: blinking 0.02s infinite alternate;
 
 
 }
@@ -290,7 +288,7 @@
     position: relative;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
     
-    animation: blinking 0.02s infinite alternate;
+    animation: blinking 0.01s infinite alternate;
 }
 
 .about p{
@@ -385,7 +383,7 @@
     position: relative;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.02s infinite alternate;
+    animation: blinking 0.01s infinite alternate;
 
 }
 
@@ -525,7 +523,7 @@
     white-space: normal;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.02s infinite alternate;
+    animation: blinking 0.01    s infinite alternate;
 
 }
 .contact .first-name{
@@ -1080,4 +1078,19 @@ html {
 }
 
 
-  
+  .navigation-bar li button:active{
+    outline: none;
+  }
+
+  .navigation-infos i:active{
+    outline: none;
+
+  }
+
+    .chevron-container i:active{
+        outline: none;
+    }
+
+    .submit-button:active{
+        outline:none;
+    }
