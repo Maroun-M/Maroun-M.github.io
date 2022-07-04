@@ -109,14 +109,17 @@
 }
 
 .intro {
+    padding-top:50px;
     height:70vh;
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr;
     align-items: center;
     justify-content: center;
 
 }
 
 .board{
+    
     min-width:300px;
     margin:0 auto;
     border:6px solid #ffd4f4;
@@ -189,8 +192,8 @@
 
 }
 @keyframes blinking {
-    70%{
-        opacity:0.80;
+    75%{
+        opacity:0.8;
     }
 }
 
@@ -260,13 +263,13 @@
     background: radial-gradient(circle, rgba(103,112,122,1) 72%, rgba(1,21,27,0.59) 97%);    width:100%;
     height:100%;
     border-radius: 5px;
-    padding-left:30px;
     padding-top:5px;
 
 }   
 
 .about .hello{
     font-family: Neon Font;
+    padding-left:30px;
     font-size:30px;
     color:#ffd9e2;
     white-space: pre;
@@ -278,6 +281,7 @@
 
 .about p{
     font-size:30px;
+    padding-left:30px;
     font-family: 'League Gothic', sans-serif;
     word-spacing: 5px;
     margin-top:45px;
@@ -299,15 +303,16 @@
 .skills{
     display:flex;
     justify-content: space-around;
+    
 }
 .html{
     display:flex;
     flex-direction: column;
-    
 }
 .css{
     display:flex;
     flex-direction: column;
+    
 }
 .js{
     display:flex;
@@ -333,11 +338,13 @@
     font-family:Neon Regular;
     letter-spacing: 2px;
     word-spacing: 0;
-    line-height:0;
     margin-top:10px;
     color:#00c8ff;
     text-align: center;
     font-weight: 700;
+    text-align:center;
+    white-space: normal;
+    padding:0
 }
 .about a{
     cursor: pointer;
@@ -361,7 +368,7 @@
     position: relative;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.037s infinite alternate;
+    animation: blinking 0.03s infinite alternate;
 
 }
 
@@ -408,6 +415,7 @@
 
 .projects button{
     background-color: #ff003cde ;
+    border:1px solid #ff003cde;
     color: #fff;
     padding: 8px 30px;
     border-radius: 30px;
@@ -418,6 +426,8 @@
 
 .projects button:hover{
     background: #ff003c8d;
+    border:1px solid #ff003c8d;
+
     cursor:pointer;
 }
 
@@ -463,7 +473,7 @@
     font-family: 'League Gothic', sans-serif;
     letter-spacing: .9px;
     font-size:20px;
-    width:100%;    
+    max-width:100%;    
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
@@ -473,6 +483,8 @@
     width:85%;
     background:#fff;
     border-radius: 5px;
+    margin-top:auto;
+
 
 }
 
@@ -481,11 +493,13 @@
     background: rgba(1, 21, 27, 0.596);
     border-radius: 5px;
     padding-bottom: 20px;
+    margin-top:auto;
 
 }
 .contact-title{
     background: #01040a;
     padding-bottom: 100px;
+    margin-top:auto;
 }
 .contact-title p{
     padding-top:100px;
@@ -497,7 +511,7 @@
     position: relative;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.037s infinite alternate;
+    animation: blinking 0.03s infinite alternate;
 
 }
 .contact .first-name{
@@ -583,4 +597,436 @@
 
 .footer{
     width:85%;
+}
+/* mobile */
+@media screen and (max-width:550px) {
+    .intro-container{
+        height:500px;
+        padding-top:10px;
+    }
+    .navigation-bar li ul{
+        font-size:16px;
+    }
+    .navigation-infos{
+        font-size:12px
+    }
+    .intro{
+        padding-top:50px
+    }
+    
+    .intro .text{
+        font-size: 25px;
+        white-space:normal;
+        
+    }
+    .intro .text:before{
+        width:80%
+    }
+    .intro .text1{
+        font-size:25px;
+        white-space:normal;
+        
+    }
+    .intro .text1:after{
+        width:80%;
+    }
+
+    .about .hello{
+        font-size:22px;
+    }
+    .about p{
+        font-size:20px
+    }
+    .about-overlay{
+        height:750px;
+        padding-top: 200px;
+    }
+    .skills-container{
+        margin:0;
+        padding:0;
+    }
+    .skills-container .skills{
+        width:100%;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 40px;
+        
+    }
+    .skills-container .skills img{
+        width:60px;
+        height:60px;
+        
+    }
+    .skills-container .skills p{
+        font-size:8px;
+        text-align:center;
+        white-space: normal;
+        padding:0
+        
+        
+    }
+    .projects-overlay p{
+        font-size:24px;
+    }
+    .projects .title{
+        font-size:18px;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+        gap:50px;
+    }
+    .projects img{
+        width:300px;
+        height:240px;
+        
+    }
+    .project{
+        width:300px;
+    }
+    .project2{
+        width:300px;
+    }
+    .project2 .title{
+        font-size:18px
+    }
+    .project2 img{
+        width:200px;
+    }
+    .contact-title{
+        padding-top:650px;
+    }
+    .contact-title p{
+        font-size:24px;
+    }
+    .contact textarea{
+        padding:6px 60px 120px 5px;
+    }
+}
+
+
+/* 550px and 980px */
+
+@media screen and (min-width:550px) and (max-width:850px) {
+    .intro-container{
+        height:500px;
+        padding-top:10px;
+    }
+    .navigation-bar li ul{
+        font-size:22px;
+    }
+    .navigation-infos{
+        font-size:20px
+    }
+    .intro{
+        padding-top:50px;
+    }
+    
+    .intro .text{
+        font-size: 40px;
+        white-space:normal;
+        
+    }
+    .intro .text:before{
+        width:100%
+    }
+    .intro .text1{
+        font-size:38px;
+        white-space:normal;
+        
+    }
+    .intro .text1:after{
+        width:100%;
+    }
+
+    .about .hello{
+        font-size:24px;
+    }
+    .about p{
+        font-size:22px
+    }
+    .about-overlay{
+        height:700px
+    }
+    .skills-container{
+        margin:0;
+        padding:0;
+    }
+    .skills-container .skills{
+        width:100%;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 50px;
+        
+    }
+    .skills-container .skills img{
+        width:100px;
+        height:100px;
+        
+    }
+    .skills-container .skills p{
+        font-size:12px;
+        text-align:center;
+        white-space: normal;
+        padding:0
+        
+        
+    }
+    .projects-overlay p{
+        font-size:26px;
+    }
+    .projects .title{
+        font-size:24px;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+        gap:50px;
+    }
+    .projects img{
+        width:350px;
+        height:280px;
+        align-self: center;
+    }
+    .project{
+        width:350px;
+    }
+    .project2{
+        width:350px;
+    }
+    .project2 .title{
+        font-size:18px
+    }
+    .project2 img{
+        width:200px;
+    }
+    .contact-title{
+        padding-top:650px;
+    }
+    .contact-title p{
+        font-size:24px;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:1050px) {
+    .intro-container{
+        padding-top:10px;
+    }
+    
+    .intro{
+        padding-top:50px;
+    }
+    
+    .intro .text{
+        font-size: 68px;
+        white-space:normal;
+        
+    }
+    .intro .text:before{
+        width:100%
+    }
+    .intro .text1{
+        font-size:66px;
+        white-space:normal;
+        
+    }
+    .intro .text1:after{
+        width:100%;
+    }
+
+    .about .hello{
+        font-size:27px;
+    }
+    .about p{
+        font-size:25px
+    }
+    .about-overlay{
+        height:700px
+    }
+    .skills-container{
+        margin:0;
+        padding:0;
+    }
+    .skills-container .skills{
+        width:100%;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 50px;
+        
+    }
+    .skills-container .skills img{
+        width:80px;
+        height:80px;
+        
+    }
+    .skills-container .skills p{
+        font-size:10px;
+        text-align:center;
+        white-space: normal;
+        padding:0
+        
+        
+    }
+    .projects-overlay p{
+        font-size:30px;
+    }
+    .projects .title{
+        font-size:20px;
+    }
+
+    .projects img{
+        width:350px;
+        height:280px;
+        align-self: center;
+    }
+    .project{
+        width:350px;
+    }
+    .project2{
+        width:350px;
+    }
+    .project2 .title{
+        font-size:18px
+    }
+    .project2 img{
+        width:200px;
+    }
+    .contact-title p{
+        font-size:30px;
+    }
+}
+
+@media screen and (min-width:1050px) and (max-width:1432px) {
+    
+    .intro-container{
+        padding-top:10px;
+    }
+    
+    .intro{
+        padding-top:50px;
+    }
+    
+    .intro .text{
+        font-size: 80px;
+        white-space:normal;
+        
+    }
+    .intro .text:before{
+        width:100%
+    }
+    .intro .text1{
+        font-size:78px;
+        white-space:normal;
+        
+    }
+    .intro .text1:after{
+        width:100%;
+    }
+
+    
+    .about-overlay{
+        height:800px
+    }
+    .skills-container{
+        margin:0;
+        padding:0;
+    }
+    .skills-container .skills{
+        width:100%;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 90px;
+        
+    }
+    .skills-container .skills img{
+        width:110px;
+        height:110px;
+        
+    }
+ 
+  
+}
+
+@media screen and (min-width:1600px) {
+    .navigation-bar li ul{
+        font-size:32px;
+    }
+    .navigation-infos{
+        font-size:28px
+    }
+    .navigation-infos i{
+        font-size:38px
+    }
+    .intro-container{
+        padding-top:10px;
+    }
+    
+    .intro{
+        padding-top:50px;
+    }
+    
+    .intro .text{
+        font-size: 110px;
+        white-space:normal;
+        
+    }
+    .intro .text:before{
+        width:100%
+    }
+    .intro .text1{
+        font-size:108px;
+        white-space:normal;
+        
+    }
+    .about-overlay{
+        height:1200px;
+        padding-top:600px;
+    }
+    .skills-container{
+        margin:0;
+        padding:0;
+    }
+    .skills-container .skills{
+        width:100%;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 90px;
+        
+    }
+    .skills-container .skills p{
+        font-size:15x;
+        text-align:center;
+        white-space: normal;
+        padding:0
+        
+        
+    }
+    .projects-overlay p{
+        font-size:35px;
+    }
+    .projects .title{
+        font-size:26px;
+    }
+
+    .projects img{
+        width:400px;
+        height:280px;
+        align-self: center;
+    }
+    .project{
+        width:400px;
+    }
+    .project2{
+        width:400px;
+    }
+    .project2 .title{
+        font-size:26px
+    }
+    .project2 img{
+        width:200px;
+    }
+    .contact-title p{
+        font-size:35px;
+    }
+    .projects .description{
+        font-size:23px;
+}
 }
