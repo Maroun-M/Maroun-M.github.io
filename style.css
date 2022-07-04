@@ -44,9 +44,12 @@
 .navigation-bar li{
     list-style-type: none;
     padding-top:5px;
-
+    
 }
-
+.navigation-bar button{
+    background:transparent;
+    border:none !important;
+}
 .navigation-bar li ul{
     display:inline-block;
     font-size:24px;
@@ -198,8 +201,8 @@
 
 }
 @keyframes blinking {
-    75%{
-        opacity:0.8;
+    70%{
+        opacity:0.9;
     }
 }
 
