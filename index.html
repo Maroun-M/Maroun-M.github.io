@@ -21,31 +21,33 @@
 </head>
 <body>
     <!-- navigation start -->
-    <div class="nav-container">
-        <div class="nav">
-            <!-- navigation buttons -->
-            <div class="navigation-bar">
-                <li>
-                    <a href=""><ul>ABOUT</ul></a>
-                    <a href=""><ul>PROJECTS</ul></a>
-                    <a href=""><ul>CONTACT</ul></a>
-                </li>
-            </div>
-            <!-- links to github and resume in the navbar -->
-            <div class="navigation-infos">
-                <div class="github">
-                    <a href="https://github.com/Maroun-M" style="text-decoration:none;" target="_blank"><i class="fa-brands fa-github"></i>
-                    <p>GitHub</p></a>
+    <div class="nav-section">
+                <div class="nav-container">
+                <div class="nav">
+                    <!-- navigation buttons -->
+                    <div class="navigation-bar">
+                        <li>
+                            <ul onClick="document.querySelector('.about-overlay').scrollIntoView();">ABOUT</ul>
+                            <ul onClick="document.querySelector('.projects-overlay').scrollIntoView();">PROJECTS</ul>
+                            <ul onClick="document.querySelector('.contact-container').scrollIntoView();">CONTACT</ul>
+                        </li>
+                    </div>
+                    <!-- links to github and resume in the navbar -->
+                    <div class="navigation-infos">
+                        <div class="github">
+                            <a href="https://github.com/Maroun-M" style="text-decoration:none;" target="_blank"><i class="fa-brands fa-github"></i>
+                            <p>GitHub</p></a>
+                        </div>
+                        <div class="resume">
+                            <a href=""style="text-decoration:none;" target="_blank"><i class="fa-solid fa-file"></i>
+                            <p>Resume</p></a>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="resume">
-                    <a href=""style="text-decoration:none;" target="_blank"><i class="fa-solid fa-file"></i>
-                    <p>Resume</p></a>
-                </div>
-                
             </div>
-        </div>
-    </div>    
-    <hr class="hr-style">
+            <hr class="hr-style">
+</div>
     <!-- navigation end -->
     <!-- intro start -->
     <div class="intro-container">
@@ -54,9 +56,12 @@
                 <span class="text"><p>MAROUN    MOURAD</p></span>
                 <span class="text1"><p>WEB    DEVELOPER</p></span>
             </div>
+            <!-- <div class="hire-me-container">
+                <span class="hire-me"><p>Hire Me</p></span>
+            </div> -->
             <div class="scroll-arrow">
                 <div class="chevron-container">
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-down" onClick="document.querySelector('.about-overlay').scrollIntoView();"></i>
                 </div>
             </div>
         </div>
@@ -95,6 +100,7 @@
         </div>
     <!-- about end -->
     <!-- projects start -->
+    <div class="projects-section">
     <div class="projects-overlay">
         <p>Personal   Projects</p>
         <div class="projects-container">
@@ -118,12 +124,14 @@
             </div>
         </div>
     </div>
+</div>
     <!-- projects end -->
     <!-- Cotact start -->
-    <div class="contact-title">
-    <p>Contact   Me</p>
-    </div>
+<div class="contact-section">
     <div class="contact-container">
+        <div class="contact-title">
+            <p>Contact   Me</p>
+        </div>
         <div class="contact-overlay">
             <div class="contact">
             
@@ -155,11 +163,12 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Contanct end -->
     <!-- scroll up arrow -->
     <div class="scroll-arrow">
         <div class="chevron-container">
-            <i class="fa-solid fa-angles-up"></i>
+            <i class="fa-solid fa-angles-up" onClick="document.documentElement.scrollTop = 0"></i>
         </div>
     </div>
     <!-- scroll arrow end -->

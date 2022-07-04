@@ -21,6 +21,9 @@
     background-color:rgba(1, 21, 27, 0.596);
     padding:10px 0;
     max-width:100%;
+    z-index:2;
+    
+
 }
 .nav{
     display:flex;
@@ -41,6 +44,7 @@
 .navigation-bar li{
     list-style-type: none;
     padding-top:5px;
+
 }
 
 .navigation-bar li ul{
@@ -51,6 +55,7 @@
     font-family: Neon Regular;
     transition:0.5s ease-in-out;
     letter-spacing: 1.5px;
+    
 
 
 }
@@ -103,6 +108,7 @@
 /* start of intro section */
 
 .intro-container{
+    padding-top:80px;
     height:700px;
     margin:0;
     background-color:#01040a;
@@ -172,7 +178,7 @@
     background-color: #fffcd7;
     border-radius: 8px;
     box-shadow: inset 0 0 18px rgba(251, 255, 0, 0.35), 0 0 18px 5px rgba(251, 255, 0, 0.35);
-    animation: blinking 0.03s infinite alternate;
+    animation: blinking 0.02s infinite alternate;
 
 }
 
@@ -187,7 +193,7 @@
     background-color: #fffcd7;
     border-radius: 8px;
     box-shadow: inset 0 0 18px rgba(251, 255, 0, 0.35), 0 0 18px 5px rgba(251, 255, 0, 0.35);
-    animation: blinking 0.03s infinite alternate;
+    animation: blinking 0.02s infinite alternate;
 
 
 }
@@ -229,6 +235,7 @@
 .scroll-arrow .chevron-container {
     background: #fff;
     border-radius:5px;
+
     
 }
 
@@ -238,6 +245,9 @@
     border-radius:5px;
     padding:7px;
     background: rgba(1, 21, 27, 0.598);
+    cursor: pointer;
+
+
 }
 
 /* end of intro section */
@@ -251,6 +261,7 @@
     display:flex;
     justify-content:center;
     padding-top:150px;
+    
 }
 .about-container{
     background-color:#fff;
@@ -259,7 +270,7 @@
     border-radius: 5px;
 }
 .about{
-    background: rgb(103,112,122);
+    background: rgb(204, 216, 220) ;
     background: radial-gradient(circle, rgba(103,112,122,1) 72%, rgba(1,21,27,0.59) 97%);    width:100%;
     height:100%;
     border-radius: 5px;
@@ -276,7 +287,7 @@
     position: relative;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
     
-    animation: blinking 0.04s infinite alternate;
+    animation: blinking 0.02s infinite alternate;
 }
 
 .about p{
@@ -352,36 +363,38 @@
 /* about section end */
 
 /* projects section start */
-
-.projects-overlay {
+.projects-section{
+    padding-top:150px;
     background: #01040a;
-    padding-top:130px;
+}
+.projects-overlay {
     max-width: 100%;
+    padding-bottom: 200px;
+
 }
 .projects-overlay p{
     font-family: Neon Font;
     font-weight: 700;
-
+    padding-top:100px;
     font-size:30px;
     color:#ffd9e2;
     white-space: pre;
     position: relative;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.03s infinite alternate;
+    animation: blinking 0.02s infinite alternate;
 
 }
 
 .projects-container{
     height:800px;
     max-width: 100%;
-   
+
 }
 
 .projects {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding-top:100px;
     column-gap: 10px;
 }
 .projects img{
@@ -474,17 +487,16 @@
     letter-spacing: .9px;
     font-size:20px;
     max-width:100%;    
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
+    display: grid;
+    
+    /* padding-bottom: 100px; */
     
 }
 .contact-overlay{
     width:85%;
     background:#fff;
     border-radius: 5px;
-    margin-top:auto;
-
+    justify-self: center;
 
 }
 
@@ -493,13 +505,13 @@
     background: rgba(1, 21, 27, 0.596);
     border-radius: 5px;
     padding-bottom: 20px;
-    margin-top:auto;
+    
+    
 
 }
 .contact-title{
     background: #01040a;
     padding-bottom: 100px;
-    margin-top:auto;
 }
 .contact-title p{
     padding-top:100px;
@@ -507,11 +519,10 @@
     font-weight: 700;
     font-size:30px;
     color:#ffd9e2;
-    white-space: pre;
-    position: relative;
+    white-space: normal;
     text-align: center;
     text-shadow:0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(225,0, 60, .5), 0 0 40px #ff003c, 0 0 300px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c;
-    animation: blinking 0.03s infinite alternate;
+    animation: blinking 0.02s infinite alternate;
 
 }
 .contact .first-name{
@@ -579,6 +590,8 @@
     border-radius:5px;
     padding:7px;
     background: rgba(1, 21, 27, 0.598);
+    cursor: pointer;
+
 }
 
 .footer-container {
@@ -665,6 +678,7 @@
         
         
     }
+    
     .projects-overlay p{
         font-size:24px;
     }
@@ -692,15 +706,19 @@
     .project2 img{
         width:200px;
     }
-    .contact-title{
+    /* .contact-title{
         padding-top:650px;
-    }
+    } */
     .contact-title p{
         font-size:24px;
     }
     .contact textarea{
         padding:6px 60px 120px 5px;
     }
+   .contact-section{
+    background:#01040a;
+    padding-top:800px
+   }
 }
 
 
@@ -798,11 +816,12 @@
     .project2 img{
         width:200px;
     }
-    .contact-title{
-        padding-top:650px;
-    }
+    
     .contact-title p{
         font-size:24px;
+    }
+    .projects-section{
+        padding-bottom: 750px;
     }
 }
 
@@ -946,6 +965,7 @@
 }
 
 @media screen and (min-width:1600px) {
+    
     .navigation-bar li ul{
         font-size:32px;
     }
@@ -960,11 +980,14 @@
     }
     
     .intro{
+        padding-top:130px;
+    }
+    .scroll-arrow{
         padding-top:50px;
     }
     
     .intro .text{
-        font-size: 110px;
+        font-size: 100px;
         white-space:normal;
         
     }
@@ -972,13 +995,12 @@
         width:100%
     }
     .intro .text1{
-        font-size:108px;
+        font-size:98px;
         white-space:normal;
         
     }
     .about-overlay{
-        height:1200px;
-        padding-top:600px;
+        height:750px;
     }
     .skills-container{
         margin:0;
@@ -1030,3 +1052,29 @@
         font-size:23px;
 }
 }
+html {
+    scroll-behavior: smooth;
+   }
+
+.nav-container ul{
+    cursor: pointer;
+}
+
+.nav-section{
+    position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1;
+  background:rgb(255, 255, 255); 
+}
+
+.nav-section-2{
+    position: fixed; 
+    top: 0;     
+    width: 100%;
+    z-index: 1;
+    background:rgba(1, 21, 27, 0.596); 
+}
+
+
+  
