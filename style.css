@@ -84,7 +84,6 @@
 .navigation-infos p{
     color:#00c8ff;
     margin-top:4px;
-    transition: 0.5s ease-in-out;
     font-family: Neon Regular;
     letter-spacing: 1.5px;
 
@@ -94,9 +93,7 @@
     color:#ff003c8d;
 
 }
-.navigation-infos p:hover{
-    color:#084454;
-}
+
 
 
 .hr-style{
@@ -111,15 +108,15 @@
 /* start of intro section */
 
 .intro-container{
-    padding-top:80px;
-    height:700px;
+    padding-top:30px;
+    height:auto;
     margin:0;
     background-color:#01040a;
 }
 
 .intro {
-    padding-top:50px;
-    height:70vh;
+    padding-top:80px;
+    height:auto;
     display:grid;
     grid-template-columns:1fr;
     align-items: center;
@@ -231,6 +228,7 @@
     width:100%;
     display: flex;
     justify-content: center;
+    padding-top:100px;
   
 }
 .scroll-arrow .chevron-container {
@@ -256,12 +254,12 @@
 /* start of about section */
 
 .about-overlay {
-    height:800px;
+    height:auto;
     background-color:#01040a;
     max-width:100%;
     display:flex;
     justify-content:center;
-    padding-top:150px;
+    padding-top:300px;
     
 }
 .about-container{
@@ -370,7 +368,6 @@
 }
 .projects-overlay {
     max-width: 100%;
-    padding-bottom: 200px;
 
 }
 .projects-overlay p{
@@ -388,7 +385,7 @@
 }
 
 .projects-container{
-    height:800px;
+    height:auto;
     max-width: 100%;
 
 }
@@ -472,7 +469,7 @@
     animation: none;
     white-space: normal;
     text-align: center;
-    padding:0;
+    padding:8px 0;
 }
 
 .project2 img{
@@ -490,8 +487,8 @@
     font-size:20px;
     max-width:100%;    
     display: grid;
-    
-    /* padding-bottom: 100px; */
+    padding-top:150px;
+
     
 }
 .contact-overlay{
@@ -615,10 +612,7 @@
 }
 /* mobile */
 @media screen and (max-width:550px) {
-    .intro-container{
-        height:500px;
-        padding-top:10px;
-    }
+   
     .navigation-bar li ul{
         font-size:16px;
     }
@@ -653,8 +647,7 @@
         font-size:20px
     }
     .about-overlay{
-        height:750px;
-        padding-top: 200px;
+        height:auto;
     }
     .skills-container{
         margin:0;
@@ -689,7 +682,6 @@
     }
     .projects{
         grid-template-columns: 1fr;
-        gap:50px;
     }
     .projects img{
         width:300px;
@@ -708,38 +700,28 @@
     .project2 img{
         width:200px;
     }
-    /* .contact-title{
-        padding-top:650px;
-    } */
+    
     .contact-title p{
         font-size:24px;
     }
     .contact textarea{
         padding:6px 60px 120px 5px;
     }
-   .contact-section{
-    background:#01040a;
-    padding-top:800px
-   }
+    
 }
 
 
 /* 550px and 980px */
 
 @media screen and (min-width:550px) and (max-width:850px) {
-    .intro-container{
-        height:500px;
-        padding-top:10px;
-    }
+    
     .navigation-bar li ul{
         font-size:22px;
     }
     .navigation-infos{
         font-size:20px
     }
-    .intro{
-        padding-top:50px;
-    }
+   
     
     .intro .text{
         font-size: 40px;
@@ -764,9 +746,7 @@
     .about p{
         font-size:22px
     }
-    .about-overlay{
-        height:700px
-    }
+   
     .skills-container{
         margin:0;
         padding:0;
@@ -799,7 +779,6 @@
     }
     .projects{
         grid-template-columns: 1fr;
-        gap:50px;
     }
     .projects img{
         width:350px;
@@ -822,19 +801,12 @@
     .contact-title p{
         font-size:24px;
     }
-    .projects-section{
-        padding-bottom: 750px;
-    }
+   
 }
 
 @media screen and (min-width:850px) and (max-width:1050px) {
-    .intro-container{
-        padding-top:10px;
-    }
     
-    .intro{
-        padding-top:50px;
-    }
+   
     
     .intro .text{
         font-size: 68px;
@@ -859,9 +831,7 @@
     .about p{
         font-size:25px
     }
-    .about-overlay{
-        height:700px
-    }
+    
     .skills-container{
         margin:0;
         padding:0;
@@ -917,13 +887,6 @@
 
 @media screen and (min-width:1050px) and (max-width:1432px) {
     
-    .intro-container{
-        padding-top:10px;
-    }
-    
-    .intro{
-        padding-top:50px;
-    }
     
     .intro .text{
         font-size: 80px;
@@ -943,18 +906,12 @@
     }
 
     
-    .about-overlay{
-        height:800px
-    }
-    .skills-container{
-        margin:0;
-        padding:0;
-    }
+  
     .skills-container .skills{
         width:100%;
         justify-content:space-around;
         align-items:center;
-        margin-top: 90px;
+        margin-top: 50px;
         
     }
     .skills-container .skills img{
@@ -967,7 +924,9 @@
 }
 
 @media screen and (min-width:1600px) {
-    
+    .intro{
+        padding-top:100px;
+    }
     .navigation-bar li ul{
         font-size:32px;
     }
@@ -977,16 +936,8 @@
     .navigation-infos i{
         font-size:38px
     }
-    .intro-container{
-        padding-top:10px;
-    }
-    
-    .intro{
-        padding-top:130px;
-    }
-    .scroll-arrow{
-        padding-top:50px;
-    }
+   
+   
     
     .intro .text{
         font-size: 100px;
@@ -1001,18 +952,12 @@
         white-space:normal;
         
     }
-    .about-overlay{
-        height:750px;
-    }
-    .skills-container{
-        margin:0;
-        padding:0;
-    }
+  
     .skills-container .skills{
         width:100%;
         justify-content:space-around;
         align-items:center;
-        margin-top: 90px;
+        margin-top: 50px;
         
     }
     .skills-container .skills p{
