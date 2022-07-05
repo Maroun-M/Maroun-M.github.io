@@ -112,6 +112,7 @@
     height:auto;
     margin:0;
     background-color:#01040a;
+    padding-bottom:400px;
 }
 
 .intro {
@@ -121,6 +122,7 @@
     grid-template-columns:1fr;
     align-items: center;
     justify-content: center;
+   
 
 }
 
@@ -228,7 +230,6 @@
     display: flex;
     justify-content: center;
     padding-top:100px;
-    padding-bottom:400px;
   
 }
 .scroll-arrow .chevron-container {
