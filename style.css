@@ -228,6 +228,7 @@
     display: flex;
     justify-content: center;
     padding-top:100px;
+    padding-bottom:400px;
   
 }
 .scroll-arrow .chevron-container {
@@ -258,7 +259,7 @@
     max-width:100%;
     display:flex;
     justify-content:center;
-    padding-top:400px;
+    padding-bottom:150px;
     
 }
 .about-container{
@@ -362,7 +363,7 @@
 
 /* projects section start */
 .projects-section{
-    padding-top:150px;
+    padding-bottom:150px;
     background: #01040a;
 }
 .projects-overlay {
@@ -486,7 +487,7 @@
     font-size:20px;
     max-width:100%;    
     display: grid;
-    padding-top:150px;
+
 
     
 }
