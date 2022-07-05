@@ -223,7 +223,6 @@
     color:white;
     align-items: center;
     text-align: center;
-    padding-top:60px;
     background-color: #01040a;
     width:100%;
     display: flex;
@@ -259,7 +258,7 @@
     max-width:100%;
     display:flex;
     justify-content:center;
-    padding-top:300px;
+    padding-top:400px;
     
 }
 .about-container{
