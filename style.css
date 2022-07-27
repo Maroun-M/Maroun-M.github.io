@@ -299,6 +299,15 @@
     margin-top:45px;
     color:#00c8ff
 }
+.email-button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 .skills-container{
     margin:130px 15px 0 15px;
 
