@@ -310,7 +310,7 @@
 }
 .skills-container{
     margin:130px 15px 0 15px;
-
+    padding-bottom:10px;
 }
 .skills-container h1{
     margin-bottom: 50px;
@@ -658,10 +658,10 @@
         font-size:20px
     }
    
-    .skills-container{
+    /* .skills-container{
         margin:0;
         padding:0;
-    }
+    } */
     .skills-container .skills{
         width:100%;
         justify-content:space-around;
@@ -756,10 +756,10 @@
         font-size:22px
     }
    
-    .skills-container{
+    /* .skills-container{
         margin:0;
         padding:0;
-    }
+    } */
     .skills-container .skills{
         width:100%;
         justify-content:space-around;
@@ -841,10 +841,7 @@
         font-size:25px
     }
     
-    .skills-container{
-        margin:0;
-        padding:0;
-    }
+    
     .skills-container .skills{
         width:100%;
         justify-content:space-around;
